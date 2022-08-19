@@ -3,17 +3,21 @@ function carregar(){
     var img = document.getElementById('imagem')
     var data = new Date()
     var hora = data.getHours()
+    
    
     msg.innerHTML = `Agora são ${hora} horas`
     if(hora >= 0 && hora < 12 ){
-      //Bom Dia
+      document.body.style.background = '#c27926a8'
       img.src = '/Aula 12 ex/modelo/exemanha.png'
+      //Bom Dia 
     }else if (hora >= 12 && hora <= 18){
-    //Boa Tarde
-    img.src = '/Aula 12 ex/modelo/exetarde.png'
+      document.body.style.background = '#a4cde4'
+      img.src = '/Aula 12 ex/modelo/exetarde.png'
+      //Boa Tarde
     }else{
-        //Boa Noite
-        img.src = '/Aula 12 ex/modelo/exenoite.png'
+      document.body.style.background = '#045156'
+      img.src = '/Aula 12 ex/modelo/exenoite.png'
+      //Boa Noite
     }
 
 }
